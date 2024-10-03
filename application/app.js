@@ -4691,7 +4691,6 @@ let store_event = function (account_id, cal_name) {
       '\nCATEGORIES:' +
       event.CATEGORIES +
       '\nEND:VEVENT' +
-      alarm + // Include the alarm section if it's not null or 'none'
       '\nEND:VCALENDAR';
 
     if (!event.RRULE) {
